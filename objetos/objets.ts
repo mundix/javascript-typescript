@@ -7,12 +7,18 @@
         powers: ['Super Velocidad', 'Viajar en el Tiempo']
     }
 
-    flash = {
+    let superman: { name: string, age?: number, powers: string[], getName?: () => string } = {
         name: 'Clark Kent',
-        // age: 60,
-        powers: ['Super fuerza'],
-        getName() {
-            return this.name
-        }
+        age: 60,
+        powers: ['Super Velocidad', 'Super fuerza']
     }
+
+    // flash = {
+    //     name: 'Clark Kent',
+    //     // age: 60,
+    //     powers: ['Super fuerza'],
+    //     getName() {
+    //         return this.name
+    //     }
+    // }
 })();
