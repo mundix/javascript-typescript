@@ -1,81 +1,85 @@
+(() => {
 
-type Heroes = {
 
-}
+  type Heroes = {
 
-type Automobile = {
-  carroceria: string;
-  modelo: string;
-  antibalas: boolean;
-  pasajeros: number;
-  disparar?: () => void;
-}
+  }
 
-type Villano = {
+  type Automobile = {
+    carroceria: string;
+    modelo: string;
+    antibalas: boolean;
+    pasajeros: number;
+    disparar?: () => void;
+  }
+
+  type Villano = {
     nombre: string,
-    edad: number ,
+    edad: number,
     mutante: boolean
   }
 
-const batimovil: Automobile = {
-  carroceria: "Negra",
-  modelo: "6x6",
-  antibalas: true,
-  pasajeros: 4
-};
+  const batimovil: Automobile = {
+    carroceria: "Negra",
+    modelo: "6x6",
+    antibalas: true,
+    pasajeros: 4
+  };
 
-const bumblebee: Automobile = {
-  carroceria: "Amarillo con negro",
-  modelo: "4x2",
-  antibalas: true,
-  pasajeros: 4,
-  disparar() { // El metodo disparar es opcional
-    console.log("Disparando");
+  const bumblebee: Automobile = {
+    carroceria: "Amarillo con negro",
+    modelo: "4x2",
+    antibalas: true,
+    pasajeros: 4,
+    disparar() { // El metodo disparar es opcional
+      console.log("Disparando");
+    }
+  };
+
+
+  // Villanos debe de ser un arreglo de objetos personalizados
+  const villanos: Villano[] = [{
+    nombre: "Lex Luthor",
+    edad: 54,
+    mutante: false
+  }, {
+    nombre: "Erik Magnus Lehnsherr",
+    edad: 49,
+    mutante: true
+  }, {
+    nombre: "James Logan",
+    edad: undefined,
+    mutante: true
+  }];
+
+  // Multiples tipos
+  type Charles = {
+    poder: string,
+    estatura: number
   }
-};
 
+  type Apocalipsis = {
+    lider: boolean,
+    miembros: string[]
+  }
 
-// Villanos debe de ser un arreglo de objetos personalizados
-const villanos: Villano[] = [{
-  nombre: "Lex Luthor",
-  edad: 54,
-  mutante: false
-}, {
-  nombre: "Erik Magnus Lehnsherr",
-  edad: 49,
-  mutante: true
-}, {
-  nombre: "James Logan",
-  edad: undefined,
-  mutante: true
-}];
+  // cree dos tipos, uno para charles y otro para apocalipsis
+  const charles: Charles = {
+    poder: "psiquico",
+    estatura: 1.78
+  };
 
-// Multiples tipos
-type Charles = {
-  poder: string,
-  estatura: number
-}
+  const apocalipsis: Apocalipsis = {
+    lider: true,
+    miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
+  }
 
-type Apocalipsis = {
-  lider: boolean,
-  miembros: string[]
-}
+  // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
+  let mystique: (Charles | Apocalipsis);
 
-// cree dos tipos, uno para charles y otro para apocalipsis
-const charles: Charles = {
-  poder: "psiquico",
-  estatura: 1.78
-};
+  console.log(apocalipsis);
 
-const apocalipsis: Apocalipsis = {
-  lider: true,
-  miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
-}
+  mystique = charles;
+  mystique = apocalipsis;
 
-// Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique: (Charles | Apocalipsis);
-
-console.log(apocalipsis);
-
-mystique = charles;
-mystique = apocalipsis;
+})();
