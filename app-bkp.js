@@ -76,3 +76,4 @@
     // Crear el tipo de funcion que acepte la funcion "noHaceNada"
     var noHaceNadaTampoco = noHaceNada(1, 'Hola', true, superHeroes);
 })();
+//# sourceMappingURL=app-bkp.js.map

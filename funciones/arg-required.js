@@ -7,3 +7,4 @@
     var name = fullName('Tony', 'Stark');
     console.log(name);
 })();
+//# sourceMappingURL=arg-required.js.map

@@ -8,3 +8,4 @@
     var villians = ['Omega Rojo', 'Dormamu', 'Green Goblin'];
     villians.forEach(function (v) { return console.log(v.toUpperCase()); });
 })();
+//# sourceMappingURL=arrays.js.map

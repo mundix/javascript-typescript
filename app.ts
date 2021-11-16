@@ -75,5 +75,7 @@ const apocalipsis: Apocalipsis = {
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 let mystique: (Charles | Apocalipsis);
 
+console.log(apocalipsis);
+
 mystique = charles;
 mystique = apocalipsis;

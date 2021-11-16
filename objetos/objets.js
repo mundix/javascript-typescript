@@ -19,4 +19,6 @@
     //         return this.name
     //     }
     // }
+    console.log(superman);
 })();
+//# sourceMappingURL=objets.js.map

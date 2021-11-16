@@ -13,3 +13,4 @@
     var name = fullName('Tony', 'Stark', true);
     console.log({ name: name });
 })();
+//# sourceMappingURL=arg-default.js.map

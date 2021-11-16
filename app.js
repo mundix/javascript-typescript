@@ -39,5 +39,7 @@ var apocalipsis = {
 };
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 var mystique;
+console.log(apocalipsis);
 mystique = charles;
 mystique = apocalipsis;
+//# sourceMappingURL=app.js.map
