@@ -1,4 +1,14 @@
 "use strict";
 (() => {
+    class Avenger {
+        constructor(name, team, realName) {
+            this.name = name;
+            this.team = team;
+            this.realName = realName;
+        }
+    }
+    Avenger.avgAge = 35;
+    const antman = new Avenger('Atnman', 'Capitan');
+    console.log(Avenger.length);
 })();
 //# sourceMappingURL=main.js.map
