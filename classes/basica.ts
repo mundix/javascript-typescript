@@ -7,6 +7,13 @@
         // public realName?:string; //optional
         static avgAge: number = 35;
 
+        // Solo puede acceder a ellas metiende la clase misma y no la instancia 
+        // Avenger.getAvgAge();
+        static getAvgAge = () => {
+            return this.name; //Nombre de la clase, y no la propiedad, devuelve 'Avenger' que es la clase en si. 
+            // Su pongo this.realName daria undefined  
+        }
+
         // ? es para opcional 
         // constructor(name:string, team:string, realName?:string) {
         constructor(
@@ -21,11 +28,22 @@
             // this.realName = realName;
             // Avenger.avgAge = avgAge; 
         }
+
+        public bio(): string {
+            return `${ this.name } ${ this.team }`;
+        }
+
+        
     }
 
     const antman: Avenger = new Avenger('Atnman', 'Capitan', 'Scott Lang');
+    
     console.log(antman);
-    console.log(Avenger.avgAge);
+
+    console.log(antman.bio());
+
+    console.log(Avenger.getAvgAge());
+    // console.log(Avenger.avgAge);
     // console.log(Avenger); //Usando propiedades staticas , se accede haciendo referencia a la clases, no a la instancia. 
 
 })();
