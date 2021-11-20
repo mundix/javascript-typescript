@@ -44,10 +44,10 @@
         }
     }
 
-    const wolverine = new Xmen('Wolverine', 'Logan', true);
-    console.log(wolverine);
+    // const wolverine = new Xmen('Wolverine', 'Logan', true);
+    // console.log(wolverine);
     // wolverine.getFullNameDesdeXmen();
 
-    wolverine.fullName = 'Eduardo';
-    console.log(wolverine.fullName); //los getters  se llaman , no se ejecutan. 
+    // wolverine.fullName = 'Eduardo';
+    // console.log(wolverine.fullName); //los getters  se llaman , no se ejecutan. 
 })();
