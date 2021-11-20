@@ -4,7 +4,9 @@
     interface Client {
         name: string;
         age?: number;
-        address?: Address
+        address?: Address,
+        //Otra diferente entre los tipos e interfaces y puede devolver cual quier tipo de datos. 
+        getFullAddress(id: string): string 
     }
 
     interface Address {
@@ -20,6 +22,9 @@
             id: 125,
             zip: 'KYZX 123',
             city: 'Okinawa',
+        },
+        getFullAddress(id: string) {
+            return this.address.city;
         }
     }
 
@@ -30,8 +35,11 @@
             id: 126,
             zip: 'KYZX 445',
             city: 'Toronto',
+        },
+        getFullAddress() {
+            return this.address.city;
         }
     }
 
-    client.address.id;
+    // console.log(client.getFullAddress('123'));
 })();
