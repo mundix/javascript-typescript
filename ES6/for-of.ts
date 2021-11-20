@@ -19,7 +19,8 @@
         weapon: 'Mjolnir',
     }
 
-    const avengers = [ironman, thor, captainAmerica];
+    // Un array de Avenders[]
+    const avengers:Avengers[] = [ironman, thor, captainAmerica];
 
     // Genial !!! 
     for (const avenger of avengers) {
