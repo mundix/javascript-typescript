@@ -12,14 +12,14 @@
     class FlyingAvenger extends Avenger {
         flygin;
 
-        constructor(){
-            super();
+        constructor(name, power){
+            super(name, power);
             this.flygin = true;
         }
     }
 
     const hulk = new Avenger('Hulk', 99999);
-    const falcon = new FlyingAvenger();
+    const falcon = new FlyingAvenger('Falcon', 50);
 
     console.log(hulk);
     console.log(falcon);

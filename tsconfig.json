@@ -103,6 +103,7 @@
     "node_modules2"
   ],
   "include": [
-    "ES6"
+    // "ES6",
+    "classes",
   ]
 }
