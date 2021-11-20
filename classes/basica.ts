@@ -38,11 +38,11 @@
 
     const antman: Avenger = new Avenger('Atnman', 'Capitan', 'Scott Lang');
     
-    console.log(antman);
+    // console.log(antman);
 
-    console.log(antman.bio());
+    // console.log(antman.bio());
 
-    console.log(Avenger.getAvgAge());
+    // console.log(Avenger.getAvgAge());
     // console.log(Avenger.avgAge);
     // console.log(Avenger); //Usando propiedades staticas , se accede haciendo referencia a la clases, no a la instancia. 
 
